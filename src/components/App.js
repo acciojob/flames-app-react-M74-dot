@@ -41,8 +41,8 @@ const App = () => {
 
   return (
     <div id="main">
-      <input type="text" data-testid="input1" value={name1} onChange={(e) => setName1(e.target.value)} />
-      <input type="text" data-testid="input2" value={name2} onChange={(e) => setName2(e.target.value)} />
+      <input type="text" name="name1" data-testid="input1" value={name1} onChange={(e) => setName1(e.target.value)} />
+      <input type="text" name="name2" data-testid="input2" value={name2} onChange={(e) => setName2(e.target.value)} />
       <button data-testid="calculate_relationship" onClick={calculateRelationship}>Calculate Relationship Future</button>
       <button data-testid="clear" onClick={clearForm}>Clear</button>
       <h3 data-testid="answer">{result}</h3>
